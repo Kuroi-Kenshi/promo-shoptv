@@ -1,0 +1,27 @@
+.closeBtn
+    position: relative
+    margin: 2rem 2rem 0 0
+    width: 8.8rem
+    height: 5.2rem
+    background-color: #fff
+    border: 2px solid #000
+    cursor: pointer
+    &::after
+        content: ''
+        position: absolute
+        top: 1rem
+        width: 0.3rem
+        height: 2.9rem
+        background-color: #000
+        transform: rotate(45deg)
+    &::before
+        content: ''
+        position: absolute
+        top: 1rem
+        width: 0.3rem
+        height: 2.9rem
+        background-color: #000
+        transform: rotate(-45deg)
+
+    &:focus
+        bachround-color: #000

@@ -1,0 +1,99 @@
+.sideBar
+    max-width: 38rem
+    // width: 100%
+    background-color: #86D3F4
+    padding: 0 4.8rem
+    display: flex
+    align-items: center
+    .wrapper
+        width: 100%
+        margin: auto
+    &__title
+        font-size: 2.6rem
+        font-weight: 400
+        line-height: 3rem
+        text-align: center
+        margin-bottom: 1.3rem
+    &__phoneNumber
+        margin-bottom: 1.3rem
+        display: flex
+        justify-content: center
+    &__phoneNumberCountryCode
+        font-weight: 700
+        font-size: 3.2rem
+        &.phoneNumberInvalid
+            color: #EA0000
+    &__phoneNumberInput
+        width: 100%
+        background-color: transparent
+        font-weight: 700
+        font-size: 3.2rem
+        border: none
+        letter-spacing: 0.1rem
+        margin: auto
+        &:focus
+            outline: none
+        &.phoneNumberInvalid
+            color: #EA0000
+    &__phoneNumberText
+        font-size: 1.4rem
+        line-height: 1.6rem
+        text-align: center
+        font-weight: 400
+        margin-bottom: 3.3rem
+    &__agreementLabel
+        display: flex
+        align-items: center
+        margin-bottom: 2rem
+    &__agreementLabelText
+        margin-left: 6rem
+        color: #565656
+        font-size: 1.4rem
+    &__agreementСheckbox
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        &:checked + .sideBar__agreementСheckboxImg
+            background-image: url('./icons/checked.svg')
+            border: none
+        &:focus + .sideBar__agreementСheckboxImg
+            box-shadow: 4px 4px 8px 0px rgba(12, 27, 39, 0.5) inset
+    &__agreementСheckboxImg
+        position: absolute
+        width: 4rem
+        height: 4rem
+        background-color: transparent
+        border: 2px solid #000
+    &__invalidNumberMessage
+        color: #EA0000
+        text-transform: uppercase
+        font-size: 1.6rem
+        font-weight: 500
+        margin-bottom: 2rem
+        text-align: center
+    &__submitBtn
+        width: 100%
+        padding: 1.2rem 1.9rem
+        background-color: transparent
+        color: #4E4E4E
+        border: 1px solid #4E4E4E
+        line-height: 1.9rem
+        font-size: 1.6rem
+        font-weight: 500
+        text-transform: uppercase
+        cursor: pointer
+        &.active
+            background-color: #000
+            color: #fff
+    &__finalText
+        font-size: 1.4rem
+        font-weight: 400
+        line-height: 1.6rem
+        text-align: center
+        width: 100%
+        margin: auto
+        &_title
+            font-size: 3.2rem
+            font-weight: 700
+            text-transform: uppercase
+            line-height: 3.7rem
