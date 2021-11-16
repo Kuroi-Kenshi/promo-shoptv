@@ -14,7 +14,9 @@ const PromoStart: FC<PromoStartProps> = ({ setPromoPageIsActive }) => {
     const [bannerVisible, setBannerVisible] = useState<boolean>(false)
 
     useEffect(() => {
-        setTimeout(() => setBannerVisible(true), 5000)
+        const timerId = setTimeout(() => setBannerVisible(true), 5000)
+
+        return () => clearTimeout(timerId);
     }, [])
     return (
         <div className={s.promoStart}>
